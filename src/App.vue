@@ -1,14 +1,17 @@
 <script setup lang="ts">
-import Header from './components/Header.vue';
+
+import { useRouter } from 'vue-router';
+import { RouterLink, RouterView } from 'vue-router';
 import Footer from './components/Footer.vue';
+import Header from './components/Header.vue';
 </script>
 
 <template>
-  <Header />
-  <main>
-    <TheWelcome />
-  </main>
-  <Footer />
+    <Header />
+    <main>
+      <RouterView />
+    </main>
+    <Footer />
 </template>
 
 <style scoped>
