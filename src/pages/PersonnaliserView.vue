@@ -4,11 +4,11 @@ import Configutateur from '../components/ConfigurateurView.vue';
 
 import { ref } from 'vue';
 import PocketBase from 'pocketbase';
-var pocketbase_ip = "";
-if (import.meta.env.MODE === "production")
-    pocketbase_ip = "https://tavue.kujundzic.fr:443"; 
-else pocketbase_ip = "http://127.0.0.1:8090/";
-const pb = new PocketBase(pocketbase_ip);
+// var pocketbase_ip = "";
+// if (import.meta.env.MODE === "production")
+//     pocketbase_ip = "https://tavue.kujundzic.fr:443"; 
+// else pocketbase_ip = "http://127.0.0.1:8090/";
+const pb = new PocketBase(import.meta.env.VITE_URL_POCKETBASE);
 
 const cadre_couleur = ref('#B2B2B2');
 const verre_couleur = ref('#1D1D1B');

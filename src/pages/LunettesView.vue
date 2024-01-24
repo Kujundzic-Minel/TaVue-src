@@ -23,7 +23,7 @@ export default {
         };
     },
     async mounted() {
-        const pb = new PocketBase('https://tavue.kujundzic.fr:443', {
+        const pb = new PocketBase(import.meta.env.VITE_URL_POCKETBASE, {
             token: '1209600'
         });
 
