@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-white p-4 shadow-md flex justify-between items-center sticky top-0 z-10">
+  <div class="bg-white p-4 shadow-md flex justify-between items-center sticky top-0 z-">
     
     <!-- Logo -->
     <RouterLink to="/">

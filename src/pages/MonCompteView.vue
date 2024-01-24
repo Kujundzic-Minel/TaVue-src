@@ -1,9 +1,12 @@
+<script>
+</script>
+
 <template>
     <div class="flex flex-col justify-center items-center w-full h-screen bg-gradient-to-br from-[#ee7752] via-[#e73c7e] to-[#23a6d5] animate-gradient">
     
         <!-- Container avec effet "glassy" -->
         <div class="flex flex-col justify-center items-center p-12 bg-white bg-opacity-10 backdrop-blur-md rounded-xl">
-            <h1 class="text-4xl font-bold text-white mb-8">Minel Kujundzic</h1>
+            <h1 class="text-4xl font-bold text-white mb-8">Minel</h1>
             <div class="text-decoration-none">
                 <h5 class="text-2xl font-semibold text-white m-0 pb-4">9 Rue lamartine</h5>
                 <h5 class="text-2xl font-semibold text-white m-0 pb-4">Montbéliard, 25200</h5>

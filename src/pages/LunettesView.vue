@@ -23,15 +23,16 @@ export default {
         };
     },
     async mounted() {
-        const pb = new PocketBase('http://tavue.kujundzic.fr:80', {
+        const pb = new PocketBase('https://tavue.kujundzic.fr:443', {
             token: '1209600'
         });
 
         try {
             this.lunettesList = await pb.collection('lunettes').getFullList({});
+
         } catch (error) {
             console.error("Erreur lors de la récupération des lunettes:", error);
         }
-    }
+    },
 }
 </script>
